@@ -1,0 +1,22 @@
+---
+# defaults file for letsencrypt
+letsencrypt_server: "https://acme-v02.api.letsencrypt.org/directory"
+letsencrypt_email_notifications: ""
+letsencrypt_freebsd_home: "/usr/local/etc/letsencrypt"
+letsencrypt_fedora_home: "/etc/letsencrypt"
+letsencrypt_registered: ""
+letsencrypt_domains: []
+letsencrypt_rfc2136_name: ""
+letsencrypt_rfc2136_secret: ""
+letsencrypt_rfc2136_algo: "HMAC-SHA512"
+letsencrypt_rfc2136_dns_server: ""
+letsencrypt_rfc2136_dns_port: "53"
+letsencrypt_rfc2136_config: ""
+letsencrypt_freebsd_packages:
+  - py311-certbot
+  - py311-certbot-dns-rfc2136
+  - py311-certbot-apache
+letsencrypt_fedora_packages:
+  - certbot.noarch
+  - python3-certbot.noarch
+  - python3-certbot-dns-rfc2136.noarch

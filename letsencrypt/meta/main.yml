@@ -1,0 +1,26 @@
+galaxy_info:
+  role_name: letsencrypt
+  author: cdf-eagles
+  description: "Role for configuring certbot for LetsEncrypt"
+  company: "N/A"
+  license: "BSD-3-Clause"
+  min_ansible_version: 2.19.3
+  platforms:
+    - name: FreeBSD
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+  galaxy_tags:
+    - networking
+    - system
+    - security
+    - encryption
+    - certbot
+    - letsencrypt
+    - certificates
+    - web
+    - tls
+    - ssl
+    - https

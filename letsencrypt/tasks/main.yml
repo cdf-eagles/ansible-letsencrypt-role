@@ -1,0 +1,11 @@
+---
+# tasks file for letsencrypt
+- name: Configure LetsEncrypt for FreeBSD
+  ansible.builtin.import_tasks:
+    file: freebsd.yml
+    when: ansible.os_family == "FreeBSD"
+
+- name: Configure LetsEncrypt for RedHat/Fedora
+  ansible.builtin.import_tasks:
+    file: redhat.yml
+    when: ansible.os_family = "RedHat"
